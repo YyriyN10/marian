@@ -1,9 +1,9 @@
 {
-    "key": "group_65a1a84021c17",
-    "title": "Marian Sep",
+    "key": "group_65f4607cb5a6f",
+    "title": "Marian Separator",
     "fields": [
         {
-            "key": "field_65a1a8402110a",
+            "key": "field_65f4607cbdfe9",
             "label": "Stärke",
             "name": "width",
             "aria-label": "",
@@ -30,7 +30,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_65f3e2b1ff716",
+            "key": "field_65f4607cbe07e",
             "label": "color",
             "name": "color",
             "aria-label": "",
@@ -43,7 +43,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#eee8db",
+            "default_value": "#eee8de",
             "enable_opacity": 0,
             "return_format": "string"
         }
@@ -66,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710483691
+    "modified": 1710516023
 }

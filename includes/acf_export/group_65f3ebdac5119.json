@@ -132,7 +132,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
+                "value": "acf\/marian-stickers"
             }
         ]
     ],
@@ -145,5 +145,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710484722
+    "modified": 1710516315
 }

@@ -4,7 +4,7 @@
 
 <script>
     // Document ready
-    $(function () {
+    (function ($) {
         function addLines() {
             // Read the width of the container .marian-sep
             var containerWidth = $('.marian-sep').width();
@@ -16,7 +16,7 @@
 
             // Adds the amount of lines as divs to the container
             for (var i = 0; i < numberOfLines; i++) {
-                $('.marian-sep').append('<div class="line" style="background-color:'+ lineColor +' "></div>');
+                $('.marian-sep').append('<div class="line" style="background-color:' + lineColor + ' "></div>');
             }
         }
 
@@ -29,5 +29,5 @@
             addLines();
         });
 
-    });
+    })(jQuery);
 </script>

@@ -1,0 +1,66 @@
+.offers {
+  background-color: #ffffff;
+  padding-bottom: 128px;
+}
+@media (max-width: 1200px) {
+  .offers {
+    padding-bottom: 110px;
+  }
+}
+@media (max-width: 992px) {
+  .offers {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .offers {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .offers {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 440px) {
+  .offers {
+    padding-bottom: 60px;
+  }
+}
+.offers .item {
+  display: flex;
+  align-items: center;
+  width: calc(33% - 12px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .offers .item {
+    width: calc(50% - 9px);
+  }
+}
+@media (max-width: 575px) {
+  .offers .item {
+    width: 100%;
+    background-image: none;
+  }
+}
+.offers .item img {
+  display: none;
+}
+@media (max-width: 575px) {
+  .offers .item img {
+    display: block;
+  }
+}
+.offers .item .inner-text {
+  padding: 24px;
+}
+@media (max-width: 1200px) {
+  .offers .item .inner-text {
+    padding: 12px;
+  }
+}
+
+/*# sourceMappingURL=marian-sticker.css.map */
