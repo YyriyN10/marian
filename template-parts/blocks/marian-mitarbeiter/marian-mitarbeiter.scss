@@ -1,0 +1,195 @@
+.marian-mitarbeiter {
+
+  hr {
+    max-width: 200px;
+    opacity: 1;
+    border-width: 2px;
+  }
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media only screen and (max-width: 1000px) {
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 0px !important;
+      display: inline;
+    }
+
+    input {
+      background: transparent;
+      border: 0px;
+      font-size: 3rem;
+      color: white;
+      width: auto;
+      max-width: calc(100% - 25px);
+      font-weight: 500;
+
+      @media only screen and (max-width: 786px) {
+          font-size: 2rem;
+      }
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: start;
+    }
+  }
+
+
+  .swiper-container {
+    overflow-x: hidden;
+    height: auto;
+    margin: 4rem 0;
+    position: relative;
+  }
+
+  .single-employee {
+    position: relative;
+    img {
+      filter: blur(2px);
+    }
+
+    &:hover {
+      .lines-container {
+        opacity: 0;
+      }
+
+      .lines {
+        transform: translateX(-1px);
+      }
+
+      .black-overlay {
+        background-color: rgba(0, 0, 0, 0.0);
+      }
+
+      .position,
+      .name,
+      .quote {
+        opacity: 0;
+      }
+
+      img {
+        filter: blur(0px);
+      }
+    }
+
+  }
+
+  .black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+  }
+
+  .lines-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s;
+    
+    .lines {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s;
+    }
+
+    // Every second .lines
+    .lines:nth-child(2n) {
+      transform: translateX(2px);
+    }
+
+    .line {
+      width: 2px;
+      height: 100%;
+      background-color: black;
+      margin: 0 auto;
+    }
+  }
+
+  .position,
+  .name,
+  .quote {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  .position {
+    bottom: 25px;
+    left: 15px;
+  }
+  
+  .name {
+    left: 15px;
+    bottom: 40px;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .quote {
+    top: 60px;
+    right: 48px;
+    font-size: 0.8rem;
+  }
+
+  .text {
+    position: relative;
+  }
+
+  #employee-circle {
+    position: absolute;
+    top: -50%;
+    right: 10%;
+    height: 150%;
+    width: auto;
+    animation: rotate 35s linear infinite;
+  }
+
+  .scrollbar-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 15px;
+    padding: 0px 15px;
+    margin-top: 50px;
+  }
+
+  .swiper-scrollbar {
+    background: transparent;
+    top: -8px;
+    width: 100%;
+    left: 0;
+    height: 25px;
+    border-radius: 0px;
+  }
+
+  .swiper-container-horizontal > .swipsser-scrollbar {
+    border-radius: 2px;
+    height: 5px;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-scrollbar-drag {
+    background: white;
+    height: 120%;
+    border-radius: 0px;
+  }
+}

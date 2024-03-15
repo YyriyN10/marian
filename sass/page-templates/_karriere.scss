@@ -1,0 +1,65 @@
+.page-template-template-karriere {
+
+  .pre-text hr {
+    max-width: 400px;
+    opacity: 1;
+    border-width: 2px;
+    margin: 25px 0;
+  }
+
+  .jobs {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .single-job {
+    hr {
+      max-width: 200px;
+      opacity: 1;
+      border-width: 2px;
+      margin: 25px 0;
+    }
+
+    .learn-more {
+      background-color: white;
+      padding: 8px 25px;
+      display: inline-block;
+      position: relative;
+      margin-top: 15px;
+
+      .label {
+        color: black;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        .lines {
+          transform: translateX(-2px);
+          opacity: 0;
+        }
+      }
+    }
+
+    .lines {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+    }
+
+    .line {
+      width: 2px;
+      height: 100%;
+      background-color: black;
+      margin: 0 auto;
+    }
+
+  }
+
+
+}

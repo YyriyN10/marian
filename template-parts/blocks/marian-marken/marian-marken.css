@@ -1,0 +1,45 @@
+.marian-marken h2 {
+  display: inline-block;
+}
+.marian-marken hr {
+  opacity: 1;
+  border-width: 2px;
+}
+.marian-marken .brand-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.marian-marken .swiper-container {
+  overflow: hidden;
+  height: auto;
+  position: relative;
+}
+.marian-marken .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.marian-marken .brand-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .marian-marken .brand-wrapper {
+    height: 50px;
+  }
+}
+
+.wp-admin .marian-marken {
+  background-color: black;
+}
+.wp-admin .marian-marken .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.wp-admin .marian-marken .col-4 {
+  width: 20%;
+}
+
+/*# sourceMappingURL=marian-marken.css.map */

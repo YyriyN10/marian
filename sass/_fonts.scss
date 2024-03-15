@@ -1,0 +1,99 @@
+/**
+ * Handles all font related css
+*/
+
+/* bitter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./webfonts/bitter-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* bitter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./webfonts/bitter-v33-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* bitter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./webfonts/bitter-v33-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+$font_primary: 'Bitter', serif;
+$font_secondary: 'Bitter', serif;
+
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  font-family: $font_secondary;
+  color: #000000;
+  word-break: break-word;
+  font-weight: 300;
+  padding-top: 120px;
+}
+
+body:not(.wp-admin),
+.block-editor__container {
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+    font-family: $font_primary;
+    font-weight: 500;
+    font-style: normal;
+
+    small {
+      font-size: 55%;
+      line-height: 1;
+      display: block;
+      margin-top: 15px;
+      text-transform: none !important;
+    }
+  }
+
+  h1, h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+
+  h3 {
+    font-size: 1.3rem;
+
+    //@media only screen and (max-width: 420px){
+    //  font-size: 1.5rem;
+    //}
+  }
+
+  p, blockquote, li {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 300;
+  }
+
+  a {
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      //color: $grey;
+    }
+  }
+}
+
+b, strong {
+  font-weight: 600;
+}

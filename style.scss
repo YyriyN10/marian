@@ -1,0 +1,49 @@
+/*
+Theme Name: Marian Werbegentur WordPress Theme
+Author: Manuel Szecsenyi
+Autor URI: https://marginleft.at/
+Description: Official Theme | For Support or questions feel free to contact me via manuel@marginleft.at
+Text Domain: marian
+Version: 1.0
+*/
+
+// Colors
+$primary: #black;
+$secondary: #6C6C6C;
+$accent: #white;
+
+// General
+@import "sass/normalize";
+@import "sass/general";
+@import "sass/fonts";
+@import "sass/utilities";
+
+// Components
+@import "sass/buttons";
+@import "sass/footer";
+@import "template-parts/blocks/marian-sep/marian-sep";
+
+// Navigation
+@import "template-parts/navigation/navigation-core/navigation";
+
+// Pages
+@import "sass/page-templates/karriere";
+
+
+.position-relative {
+    position: relative;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+hr {
+    border-width: 2px;
+    margin: 1rem 0 1.5rem;
+}

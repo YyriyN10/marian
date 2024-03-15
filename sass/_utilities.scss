@@ -1,0 +1,24 @@
+/**
+ * Utilities
+ */
+
+/**
+ * Text utilities
+ */
+.text-primary{
+  color: $primary !important;
+}
+
+
+/**
+ * Container utilities
+ */
+.has-background-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fd-column{
+  flex-direction: column;
+}

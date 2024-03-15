@@ -1,0 +1,12 @@
+<?php
+
+acf_register_block_type(array(
+    'name'              => 'marian-hero',
+    'title'             => __('Marian Hero'),
+    'description'       => __(''),
+    'render_template'   => 'template-parts/blocks/marian-hero/marian-hero.php',
+    'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/marian-hero/marian-hero.css',
+    'category'          => 'formatting',
+    //'icon'              => 'megaphone',
+    'keywords'          => array( 'marian', 'block' ),
+));

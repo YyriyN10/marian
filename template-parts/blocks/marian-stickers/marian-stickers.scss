@@ -1,0 +1,58 @@
+.offers{
+  background-color: #ffffff;
+  padding-bottom: 128px;
+
+  @media(max-width: 1200px){
+    padding-bottom: 110px;
+  }
+
+  @media(max-width: 992px){
+    padding-bottom: 100px;
+  }
+
+  @media(max-width: 767px){
+    padding-bottom: 80px;
+  }
+
+  @media(max-width: 575px){
+    padding-bottom: 70px;
+  }
+
+  @media(max-width: 440px){
+    padding-bottom: 60px;
+  }
+
+  .item{
+    display: flex;
+    align-items: center;
+    width: calc(33% - ((18px * 2)/3));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media(max-width: 1024px){
+      width: calc(50% - 9px);
+    }
+
+    @media(max-width: 575px){
+      width: 100%;
+      background-image: none;
+    }
+
+    img{
+      display: none;
+
+      @media(max-width: 575px){
+        display: block;
+      }
+    }
+
+    .inner-text{
+      padding: 24px;
+
+      @media(max-width: 1200px){
+        padding: 12px;
+      }
+    }
+  }
+}

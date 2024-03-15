@@ -1,0 +1,7 @@
+html,
+body:not(.wp-admin){
+  scroll-behavior: smooth;
+  min-height: 100%;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}

@@ -1,0 +1,165 @@
+.marian-mitarbeiter hr {
+  max-width: 200px;
+  opacity: 1;
+  border-width: 2px;
+}
+.marian-mitarbeiter .search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  .marian-mitarbeiter .search-wrapper {
+    display: block;
+  }
+}
+.marian-mitarbeiter .search-wrapper h2 {
+  margin-bottom: 0px !important;
+  display: inline;
+}
+.marian-mitarbeiter .search-wrapper input {
+  background: transparent;
+  border: 0px;
+  font-size: 3rem;
+  color: white;
+  width: auto;
+  max-width: calc(100% - 25px);
+  font-weight: 500;
+}
+@media only screen and (max-width: 786px) {
+  .marian-mitarbeiter .search-wrapper input {
+    font-size: 2rem;
+  }
+}
+.marian-mitarbeiter .search-wrapper .input-wrapper {
+  display: flex;
+  align-items: start;
+}
+.marian-mitarbeiter .swiper-container {
+  overflow-x: hidden;
+  height: auto;
+  margin: 4rem 0;
+  position: relative;
+}
+.marian-mitarbeiter .single-employee {
+  position: relative;
+}
+.marian-mitarbeiter .single-employee img {
+  filter: blur(2px);
+}
+.marian-mitarbeiter .single-employee:hover .lines-container {
+  opacity: 0;
+}
+.marian-mitarbeiter .single-employee:hover .lines {
+  transform: translateX(-1px);
+}
+.marian-mitarbeiter .single-employee:hover .black-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+.marian-mitarbeiter .single-employee:hover .position,
+.marian-mitarbeiter .single-employee:hover .name,
+.marian-mitarbeiter .single-employee:hover .quote {
+  opacity: 0;
+}
+.marian-mitarbeiter .single-employee:hover img {
+  filter: blur(0px);
+}
+.marian-mitarbeiter .black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+.marian-mitarbeiter .lines-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s;
+}
+.marian-mitarbeiter .lines-container .lines {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.marian-mitarbeiter .lines-container .lines:nth-child(2n) {
+  transform: translateX(2px);
+}
+.marian-mitarbeiter .lines-container .line {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  margin: 0 auto;
+}
+.marian-mitarbeiter .position,
+.marian-mitarbeiter .name,
+.marian-mitarbeiter .quote {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.marian-mitarbeiter .position {
+  bottom: 25px;
+  left: 15px;
+}
+.marian-mitarbeiter .name {
+  left: 15px;
+  bottom: 40px;
+  font-size: 1.7rem;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.marian-mitarbeiter .quote {
+  top: 60px;
+  right: 48px;
+  font-size: 0.8rem;
+}
+.marian-mitarbeiter .text {
+  position: relative;
+}
+.marian-mitarbeiter #employee-circle {
+  position: absolute;
+  top: -50%;
+  right: 10%;
+  height: 150%;
+  width: auto;
+  animation: rotate 35s linear infinite;
+}
+.marian-mitarbeiter .scrollbar-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 15px;
+  padding: 0px 15px;
+  margin-top: 50px;
+}
+.marian-mitarbeiter .swiper-scrollbar {
+  background: transparent;
+  top: -8px;
+  width: 100%;
+  left: 0;
+  height: 25px;
+  border-radius: 0px;
+}
+.marian-mitarbeiter .swiper-container-horizontal > .swipsser-scrollbar {
+  border-radius: 2px;
+  height: 5px;
+  width: 200px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.marian-mitarbeiter .swiper-scrollbar-drag {
+  background: white;
+  height: 120%;
+  border-radius: 0px;
+}
+
+/*# sourceMappingURL=marian-mitarbeiter.css.map */

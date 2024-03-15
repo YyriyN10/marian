@@ -1,0 +1,49 @@
+.btn {
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-family: $font_primary;
+  font-size: 1rem;
+}
+
+.btn-ico-white {
+  &::after {
+    background-image: url(img/button_n_lg_w.svg);
+  }
+}
+
+.btn-primary{
+  background-color: #98C01E;
+  color: white !important;
+  border-color: #98C01E;
+  box-shadow: 6px 6px 24px #00000029;
+
+  &:hover{
+    border-color: #98C01E;
+    background-color: white;
+    color: #98C01E !important;
+  }
+
+  &:focus,
+  &:active{
+    background-color: transparent !important;
+  }
+}
+
+.btn-secondary{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+
+  &:hover{
+    border-color: white;
+    background-color: white;
+    color: black;
+  }
+
+  &:focus,
+  &:active{
+    background-color: black!important;
+  }
+}
